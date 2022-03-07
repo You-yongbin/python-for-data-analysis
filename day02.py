@@ -88,3 +88,33 @@ arr_i = np.arange(32).reshape((8,4))
 ix_()사용 시 1차원 정수배열 2개를 사격형 영역에서 사용할 색인으로 변환해준다.
 '''
 print(arr_i[np.ix_([1,5,7,2], [0,3,1,2])])
+
+arr = np.arange(15).reshape((3,5))
+print(arr)
+# [[ 0  1  2  3  4]
+#  [ 5  6  7  8  9]
+#  [10 11 12 13 14]]
+''' 전치 '''
+print(arr.T)
+# [[ 0  5 10]
+#  [ 1  6 11]
+#  [ 2  7 12]
+#  [ 3  8 13]
+#  [ 4  9 14]]
+
+''' 유니버셜 함수 '''
+
+arr = np.arange(10)
+print(np.sqrt(arr))
+print(np.exp(arr))
+
+#np.save("test", arr)
+
+'''
+dot()
+'''
+
+a = np.array([1,2,3])
+b = np.array([3,4,5])
+
+print("np.dot(a,b) :",np.dot(a,b))
